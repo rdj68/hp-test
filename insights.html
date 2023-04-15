@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Insights</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="module" src="script/insights.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <style>
+        html, body{
+            height: 100%;
+        }
+
+        body {
+            background-image: url('Insights.jpeg');
+            background-repeat: no-repeat;
+            height: 100%;
+            background-size: 100% 100% ;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img class="is-large" src="images/logo.png">
+            </a>
+            <a class="navbar-item" href="index.html"><b>
+                Home
+            </b></a>
+
+            <a class="navbar-item" href="insights.html"><b>
+                Insights
+            </b></a>
+            <a class="navbar-item" href="activities.html"><b>
+                Activities
+            </b></a>
+            <a class="navbar-item" href="motivation.html"><b>
+                Motivation
+            </b></a>
+            <a class="navbar-item" href="tips.html"><b>
+                Tips
+            </b></a>
+        </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+
+            <h1 class="title"><font color="orange" size="+4" face="serif">Insights:-</font></h1>
+
+            <div class="is-flex">
+                <div class="field mr-1">
+                    <label class="label"><font color ="white">Data Type</font></label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="select-data">
+                                <option data-default="true">Select Data</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field mr-1">
+                    <label class="label"><font color ="white">Graph Type</font></label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="select-chart">
+                                <option data-default="true">Select Graph</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <canvas id="myChart"></canvas>
+        </div>
+    </section>
+
+</body>
+
+</html>
